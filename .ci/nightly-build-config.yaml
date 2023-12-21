@@ -17,7 +17,7 @@ default:
         docker system prune -f
 
 build:
-  - project: kiegroup/drools
+  - project: apache/incubator-kie-drools
     build-command:
       current: |
         java -jar ${{ env.PME_CLI_PATH }} -s ${{ env.PME_MAVEN_SETTINGS_XML }} -DallowConfigFilePrecedence=true -DprojectSrcSkip=false ${{ env.PME_ALIGNMENT_PARAMS_kiegroup_drools }}
